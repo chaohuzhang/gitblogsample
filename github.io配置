@@ -8,8 +8,9 @@ https://www.cnblogs.com/highway-9/p/5985893.html
 发表文章
 hexo new "xxxxxxxx" 
 hexo clean
-hexo generate(可以缩写成g)
-hexo deploy(可以缩写成d)
+hexo g
+hexo s --debug
+hexo d
 
 hexo s --debug 本地调试模式
 
@@ -20,3 +21,12 @@ https://notes.doublemine.me/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%
 disqus添加评论
 https-suiye223-github-io
 http://www.cylong.com/blog/2017/03/26/hexo-next-disqus/
+
+
+打造个性超赞博客Hexo+NexT+GitHubPages的超深度优化
+https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html
+
+git submodule add https://github.com/CatherineLiyuankun/Hexo-theme-zilan.git
+git submodule init
+git submodule update
+https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97

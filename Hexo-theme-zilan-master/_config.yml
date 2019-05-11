@@ -1,0 +1,279 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: 岚
+subtitle: Talk to myself.
+author: Yuankun Li
+language:
+timezone:
+
+# Header
+menu:
+  Home: /
+  Archives: /archive
+  Categories: /categories
+  Tags: /tags
+  About: /about
+
+rss: /atom.xml
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: https://catherineliyuankun.github.io/       # Note: don't forget to modify the CNAME file to your url
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+#Custom Setting Start
+
+# Site settings
+SEOTitle: Yuankun | 源坤
+email: muzilan1@qq.com
+description: ""
+keyword: ""
+header-img: img/header_img/home-bg.png
+signature: true #show signature
+signature-img: img/signature/signature-white.png
+header-cover: true # make cover the header img
+header-cover-color: rgba(0,0,0,.2) # the color cover the header img
+img-watermark: 	imageView2/0/q/75|watermark/1/image/aHR0cDovL3BlM29sN3Rqay5ia3QuY2xvdWRkbi5jb20vc2lnbmF0dXJlLXdoaXRlLnBuZw==/dissolve/50/gravity/SouthEast/dx/10/dy/5
+
+
+# footer SNS settings
+RSS: true
+zhihu_username: muzilan
+github_username: catherineliyuankun
+twitter_username: CatherineLiYK
+facebook_username: liyuankun
+linkedin_username: liyuankun
+email_username: muzilan1@qq.com
+# weibo_username: muzilanlan
+
+# Build settings
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+# Disqus settings
+disqus_username: lyk-1
+
+# Duoshuo settings
+# duoshuo_username: lyk
+# Share component is depend on Comment so we can NOT use share only.
+# duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+
+# Gitment
+# Introduction: https://imsun.net/posts/gitment-introduction/
+gitment:
+  enable: true
+  mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
+  count: true # Show comments count in post meta area
+  lazy: true # Comments lazy loading with a button
+  cleanly: true # Hide 'Powered by ...' on footer, and more
+  language: # Force language, or auto switch by theme
+  github_user: CatherineLiyuankun # MUST HAVE, Your Github ID
+  github_repo: gitment-comments # MUST HAVE, The repo you use to store Gitment comments
+  client_id: f3a0c1c7153576e1ab6c # MUST HAVE, Github client id for the Gitment
+  client_secret: bedf5010df925fa0e02e8be9399a64caac3d2b4e # EITHER this or proxy_gateway, Github access secret token for the Gitment
+  proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
+  redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
+
+
+# NeedMoreShare2
+# This plugin is a pure javascript sharing lib which is useful in China.
+# See: https://github.com/revir/need-more-share2
+# Also see: https://github.com/DzmVasileusky/needShareButton
+# iconStyle: default | box | light
+# boxForm: horizontal | vertical
+# position: top / middle / bottom + Left / Center / Right
+# networks: Weibo,Wechat,Douban,QQZone,Twitter,Linkedin,Mailto,Reddit,
+#           Delicious,StumbleUpon,Pinterest,Facebook,GooglePlus,Slashdot,
+#           Technorati,Posterous,Tumblr,GoogleBookmarks,Newsvine,
+#           Evernote,Friendfeed,Vkontakte,Odnoklassniki,Mailru
+needmoreshare2:
+  enable: true
+  postbottom: 
+    headerEnable: true
+    postEnable: true
+    enable: true
+    options:
+      postIconStyle: light
+      headerIconStyle: light
+      boxForm: horizontal
+      postPosition: middleRight
+      headerPosition: bottom
+      networks: Wechat,Weibo,Douban,Twitter,Facebook,Reddit,Linkedin,Evernote
+  float: 
+    enable: true
+    options:
+      iconStyle: box
+      boxForm: horizontal
+      position: middleRight
+      networks: Wechat,Weibo,Douban,Twitter,Facebook,Reddit,Linkedin,Evernote
+
+
+# Analytics settings
+# Baidu Analytics
+# ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+# Google Analytics
+ga_track_id: 'UA-XXXXXXXX-X'          # Format: UA-xxxxxx-xx
+ga_domain: yoursite
+
+# forkme
+forkme: false # Fork me on GitHub
+forkme-url: https://github.com/CatherineLiyuankun/Hexo-theme-zilan # GitHub url
+
+# donate
+donate: true
+donate-alipay: https://github.com/CatherineLiyuankun/PictureBed/raw/master/blog/base/alipay.png
+donate-wechat: https://github.com/CatherineLiyuankun/PictureBed/raw/master/blog/base/wechatpay.png
+fancybox: true
+
+# Sidebar settings -----------
+sidebar: true                       # whether or not using Sidebar.
+sidebar-about-description: "Li,Yuankun a lazy soft engineer"
+sidebar-avatar: img/chatHead.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+widgets:
+- featured-tags
+- category
+- short-about
+- recent-posts
+- friends-blog
+# - wechat
+# - archive
+
+# widget behavior
+## Archive
+archive_type: 'monthly'
+show_count: true
+
+## wechat
+wechat-imgurl: img/wechat-icon.png #url of wechat QR code
+
+## Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+post-tags: false                # whether or not using Feature-Tags at bottom of blog page
+featured-condition-size: 0              # A tag will be featured if the size of it is more than this condition value
+
+## Category
+page_header_category: true # show page_header categories
+home_posts_category: true # show posts categories
+post-category: false # show page categories at the end
+sidebar-category: true # show sidebar categories
+
+# short-about SNS settings
+short_RSS: true
+# short_weibo_username: muzilanlan
+short_zhihu_username: muzilan
+short_github_username: catherineliyuankun
+# short_twitter_username: CatherineLiYK
+# short_facebook_username: liyuankun
+short_linkedin_username: liyuankun
+
+## Friends
+post-friends: false
+
+friends: [
+    {
+        title: "CSDN",
+        href: "https://blog.csdn.net/muzilanlan"
+    }
+]
+
+# Sidebar settings End ------------
+
+#Custom Setting End
+
+
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: true
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: true
+  tab_replace:
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+  TECH: TECH
+  Hexo: Hexo
+  LIFE: LIFE
+tag_map:
+home_posts_tag: true # show posts tags
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: archives
+
+archive_generator:
+  per_page: 10
+  yearly: true
+  monthly: true
+  daily: false
+  
+# Markdown-it config
+## Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki
+markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  anchors:
+    level: 1
+    permalinkSymbol: ''
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: zilan
+plugins:
+    hexo-generator-feed
+
+#Feed Atom
+feed:
+    type: atom
+    path: atom.xml
+    limit: 20
+
+#sitemap
+sitemap:
+  path: sitemap.xml
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: https://github.com/CatherineLiyuankun/CatherineLiyuankun.github.io
+  branch: master
